@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Barcode</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.4D.4DPlugin.miyako.barcode</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>4DCB</string>
+	<key>CFBundleSignature</key>
+	<string>4D06</string>
+	<key>CFBundleVersion</key>
+	<string>12.0</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+</dict>
+</plist>

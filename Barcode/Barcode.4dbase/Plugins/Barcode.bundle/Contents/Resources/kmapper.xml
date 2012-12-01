@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://www.4d.com/namespace/reserved/FP/Constants">
+   <appid>&quot;0&quot;</appid>
+   <fourdversmin>&quot;9.0.0&quot;</fourdversmin>
+   <fourdversmax>&quot;9.0.0&quot;</fourdversmax>
+   <command name="MICRO QRCODE Data" str="20000" topic="1">
+      <param position="2" k="20001"/>
+      <param position="3" k="20002"/>
+      <param position="4" k="20003"/>
+   </command>
+   <command name="MICRO QRCODE Text" str="20000" topic="2">
+      <param position="2" k="20000"/>
+      <param position="3" k="20001"/>
+      <param position="4" k="20002"/>
+      <param position="5" k="20003"/>
+   </command>
+   <command name="QRCODE Data" str="20000" topic="3">
+      <param position="2" k="20001"/>
+      <param position="3" k="20003"/>
+   </command>
+   <command name="QRCODE Text" str="20000" topic="4">
+      <param position="2" k="20000"/>
+      <param position="3" k="20001"/>
+      <param position="4" k="20003"/>
+   </command>
+</application>

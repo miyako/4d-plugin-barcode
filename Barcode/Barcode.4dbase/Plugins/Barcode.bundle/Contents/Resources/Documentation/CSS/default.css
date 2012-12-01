@@ -1,0 +1,52 @@
+﻿body {
+  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 24pt;
+}
+
+h2 {
+  margin-top: 30pt;
+  font-size: 18pt;
+  border: solid 1px #999;
+  border-width: 0 0 1px 0;
+}
+
+h3 {
+  margin-top: 14pt;
+  margin-bottom: 6pt;
+  font-size: 14pt;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+code, pre {
+  font-family: Monaco, monospace;
+  font-size: 9pt;
+}
+
+a {
+  color: #6ea9c9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #456887;
+}
+
+.title {
+	font-weight: bold;	
+}
+
+.footer {
+	text-align: right;		
+}

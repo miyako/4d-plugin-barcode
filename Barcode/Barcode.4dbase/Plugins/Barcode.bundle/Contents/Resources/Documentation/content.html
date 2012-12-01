@@ -1,0 +1,318 @@
+<html xmlns:date="http://exslt.org/dates-and-times">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./CSS/default.css">
+<title>Barcode</title>
+</head>
+<body>
+<h1>Barcode</h1>
+<p>
+<span class="title">Plugin Identifier: </span>20000</p>
+<p>
+<span class="title">Summary</span>
+</p>
+<ex4D:plugin-description xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for Barcode here -->
+<p>This plugin allows one to generate 2 dimensional barcode, know as QRCODE, using the <a href="http://fukuchi.org/works/qrencode/index.en.html">libqrencode</a> library.</p>
+<p>It also contains a function to read barcode data from an image, using the <a href="http://zbar.sourceforge.net/">zbar</a> library.</p>
+<p>(QR Code is registered trademarks of DENSO WAVE INCORPORATED in JAPAN and other countries.) </p>
+</ex4D:plugin-description>
+<a name="command:1"></a>
+<h2>qrencode</h2>
+<a name="command:1,1"></a>
+<h3>MICRO QRCODE Data</h3>
+<p>
+<code>TEXT:=MICRO QRCODE Data (data; level; version; type)</code>
+</p>
+<p>
+<code>data (BLOB)</code>
+</p>
+<ex4D:argument argument-id="1" label="data" type="O" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $1 (BLOB) here-->
+</ex4D:argument>
+<p>
+<code>level (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="2" label="level" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $2 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:2">QR Error Correction Level</a> constant for <code>level</code>.</p>
+<p>
+<code>version (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="3" label="version" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $3 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:3">QR Micro Version</a> constant for <code>version</code>.</p>
+<p>
+<code>type (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="4" label="type" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $4 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:4">QR Export Format</a> constant for <code>type</code>.</p>
+<p>
+<code>returnValue</code> (TEXT)<br>
+<ex4D:return-value label="" type="T" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for return value (TEXT) here-->
+</ex4D:return-value>
+</p>
+<p>
+<span class="title">Discussion</span>
+</p>
+<ex4D:command-description xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for MICRO QRCODE Data here -->
+</ex4D:command-description>
+<a name="command:1,2"></a>
+<h3>MICRO QRCODE Text</h3>
+<p>
+<code>TEXT:=MICRO QRCODE Text (data; mode; level; version; type)</code>
+</p>
+<p>
+<code>data (TEXT)</code>
+</p>
+<ex4D:argument argument-id="1" label="data" type="T" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $1 (TEXT) here-->
+</ex4D:argument>
+<p>
+<code>mode (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="2" label="mode" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $2 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:1">QR Encode Mode</a> constant for <code>mode</code>.</p>
+<p>
+<code>level (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="3" label="level" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $3 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:2">QR Error Correction Level</a> constant for <code>level</code>.</p>
+<p>
+<code>version (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="4" label="version" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $4 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:3">QR Micro Version</a> constant for <code>version</code>.</p>
+<p>
+<code>type (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="5" label="type" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $5 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:4">QR Export Format</a> constant for <code>type</code>.</p>
+<p>
+<code>returnValue</code> (TEXT)<br>
+<ex4D:return-value label="" type="T" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for return value (TEXT) here-->
+</ex4D:return-value>
+</p>
+<p>
+<span class="title">Discussion</span>
+</p>
+<ex4D:command-description xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for MICRO QRCODE Text here -->
+</ex4D:command-description>
+<a name="command:1,3"></a>
+<h3>QRCODE Data</h3>
+<p>
+<code>TEXT:=QRCODE Data (data; level; type)</code>
+</p>
+<p>
+<code>data (BLOB)</code>
+</p>
+<ex4D:argument argument-id="1" label="data" type="O" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $1 (BLOB) here-->
+</ex4D:argument>
+<p>
+<code>level (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="2" label="level" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $2 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:2">QR Error Correction Level</a> constant for <code>level</code>.</p>
+<p>
+<code>type (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="3" label="type" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $3 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:4">QR Export Format</a> constant for <code>type</code>.</p>
+<p>
+<code>returnValue</code> (TEXT)<br>
+<ex4D:return-value label="" type="T" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for return value (TEXT) here-->
+</ex4D:return-value>
+</p>
+<p>
+<span class="title">Discussion</span>
+</p>
+<ex4D:command-description xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QRCODE Data here -->
+</ex4D:command-description>
+<a name="command:1,4"></a>
+<h3>QRCODE Text</h3>
+<p>
+<code>TEXT:=QRCODE Text (data; mode; level; type)</code>
+</p>
+<p>
+<code>data (TEXT)</code>
+</p>
+<ex4D:argument argument-id="1" label="data" type="T" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $1 (TEXT) here-->
+</ex4D:argument>
+<p>
+<code>mode (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="2" label="mode" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $2 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:1">QR Encode Mode</a> constant for <code>mode</code>.</p>
+<p>
+<code>level (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="3" label="level" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $3 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:2">QR Error Correction Level</a> constant for <code>level</code>.</p>
+<p>
+<code>type (LONGINT)</code>
+</p>
+<ex4D:argument argument-id="4" label="type" type="L" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $4 (LONGINT) here-->
+</ex4D:argument>
+<p>You can use a <a href="#constant:4">QR Export Format</a> constant for <code>type</code>.</p>
+<p>
+<code>returnValue</code> (TEXT)<br>
+<ex4D:return-value label="" type="T" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for return value (TEXT) here-->
+</ex4D:return-value>
+</p>
+<p>
+<span class="title">Discussion</span>
+</p>
+<ex4D:command-description xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QRCODE Text here -->
+</ex4D:command-description>
+<a name="command:2"></a>
+<h2>zbar</h2>
+<a name="command:2,5"></a>
+<h3>BARCODE Read image</h3>
+<p>
+<code>firstValue:=BARCODE Read image (barcodeImage; types; values)</code>
+</p>
+<p>
+<code>barcodeImage (PICTURE)</code>
+</p>
+<ex4D:argument argument-id="1" label="barcodeImage" type="P" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $1 (PICTURE) here-->
+</ex4D:argument>
+<p>
+<code>types (ARRAY)</code>
+</p>
+<ex4D:argument argument-id="2" label="types" type="Y" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $2 (ARRAY) here-->
+</ex4D:argument>
+<p>
+<code>values (ARRAY)</code>
+</p>
+<ex4D:argument argument-id="3" label="values" type="Y" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for $3 (ARRAY) here-->
+</ex4D:argument>
+<p>
+<code>firstValue</code> (TEXT)<br>
+<ex4D:return-value label="firstValue" type="T" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for return value (TEXT) here-->
+</ex4D:return-value>
+</p>
+<p>
+<span class="title">Discussion</span>
+</p>
+<ex4D:command-description xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for BARCODE Read image here -->
+</ex4D:command-description>
+<a name="constant:1"></a>
+<h2>QR Encode Mode</h2>
+<p>
+<code><a name="constant:1,1"></a>QR Mode Unicode (0)</code>
+</p>
+<ex4D:constant constant-id="1" name="QR Mode Unicode" type="L" value="0" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Mode Unicode (0) here-->
+</ex4D:constant>
+<p>
+<code><a name="constant:1,2"></a>QR Mode Kanji (3)</code>
+</p>
+<ex4D:constant constant-id="2" name="QR Mode Kanji" type="L" value="3" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Mode Kanji (3) here-->
+</ex4D:constant>
+<a name="constant:2"></a>
+<h2>QR Error Correction Level</h2>
+<p>
+<code><a name="constant:2,1"></a>QR Correction Level L (0)</code>
+</p>
+<ex4D:constant constant-id="1" name="QR Correction Level L" type="L" value="0" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Correction Level L (0) here-->
+</ex4D:constant>
+<p>
+<code><a name="constant:2,2"></a>QR Correction Level M (1)</code>
+</p>
+<ex4D:constant constant-id="2" name="QR Correction Level M" type="L" value="1" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Correction Level M (1) here-->
+</ex4D:constant>
+<p>
+<code><a name="constant:2,3"></a>QR Correction Level Q (2)</code>
+</p>
+<ex4D:constant constant-id="3" name="QR Correction Level Q" type="L" value="2" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Correction Level Q (2) here-->
+</ex4D:constant>
+<p>
+<code><a name="constant:2,4"></a>QR Correction Level H (3)</code>
+</p>
+<ex4D:constant constant-id="4" name="QR Correction Level H" type="L" value="3" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Correction Level H (3) here-->
+</ex4D:constant>
+<a name="constant:3"></a>
+<h2>QR Micro Version</h2>
+<p>
+<code><a name="constant:3,1"></a>QR Micro Version 1 (1)</code>
+</p>
+<ex4D:constant constant-id="1" name="QR Micro Version 1" type="L" value="1" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Micro Version 1 (1) here-->
+</ex4D:constant>
+<p>
+<code><a name="constant:3,2"></a>QR Micro Version 2 (2)</code>
+</p>
+<ex4D:constant constant-id="2" name="QR Micro Version 2" type="L" value="2" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Micro Version 2 (2) here-->
+</ex4D:constant>
+<p>
+<code><a name="constant:3,3"></a>QR Micro Version 3 (3)</code>
+</p>
+<ex4D:constant constant-id="3" name="QR Micro Version 3" type="L" value="3" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Micro Version 3 (3) here-->
+</ex4D:constant>
+<p>
+<code><a name="constant:3,4"></a>QR Micro Version 4 (4)</code>
+</p>
+<ex4D:constant constant-id="4" name="QR Micro Version 4" type="L" value="4" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Micro Version 4 (4) here-->
+</ex4D:constant>
+<a name="constant:4"></a>
+<h2>QR Export Format</h2>
+<p>
+<code><a name="constant:4,2"></a>QR Format Binary (0)</code>
+</p>
+<ex4D:constant constant-id="2" name="QR Format Binary" type="L" value="0" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Format Binary (0) here-->
+</ex4D:constant>
+<p>
+<code><a name="constant:4,1"></a>QR Format SVG (1)</code>
+</p>
+<ex4D:constant constant-id="1" name="QR Format SVG" type="L" value="1" xmlns:ex4D="http://www.4d.com/plugin">
+<!-- write documentation for QR Format SVG (1) here-->
+</ex4D:constant>
+<p class="footer">
+<span class="title">Documentation Update: </span>2012-11-30T20:55:2201:00</p>
+</body>
+</html>

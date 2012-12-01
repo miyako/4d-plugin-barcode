@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B684F506944F2000CC6A1E /* 4DPluginAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18B684EE06944F2000CC6A1E /* 4DPluginAPI.cpp */; };
+		18B684F706944F2000CC6A1E /* 4DPluginAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B684F006944F2000CC6A1E /* 4DPluginAPI.h */; };
+		18B684F806944F2000CC6A1E /* EntryPoints.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B684F106944F2000CC6A1E /* EntryPoints.h */; };
+		18B684F906944F2000CC6A1E /* Flags.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B684F206944F2000CC6A1E /* Flags.h */; };
+		18B684FA06944F2000CC6A1E /* PrivateTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B684F306944F2000CC6A1E /* PrivateTypes.h */; };
+		18B684FB06944F2000CC6A1E /* PublicTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B684F406944F2000CC6A1E /* PublicTypes.h */; };
+		18B684FF06944F8800CC6A1E /* 4DPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18B684FE06944F8800CC6A1E /* 4DPlugin.cpp */; };
+		18B685230694531300CC6A1E /* 4DPlugin.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = 18B685220694531300CC6A1E /* 4DPlugin.rsrc */; };
+		8D01CCC80486CAD60068D4B7 /* 4D Plugin_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B30371A71500C91783 /* 4D Plugin_Prefix.pch */; };
+		8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+		D10DD2C4135FA56100319781 /* C_TIME.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D10DD2C2135FA56100319781 /* C_TIME.cpp */; };
+		D10DD2C5135FA56100319781 /* C_TIME.h in Headers */ = {isa = PBXBuildFile; fileRef = D10DD2C3135FA56100319781 /* C_TIME.h */; };
+		D10DD2EB135FAB2F00319781 /* C_DATE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D10DD2E9135FAB2F00319781 /* C_DATE.cpp */; };
+		D10DD2EC135FAB2F00319781 /* C_DATE.h in Headers */ = {isa = PBXBuildFile; fileRef = D10DD2EA135FAB2F00319781 /* C_DATE.h */; };
+		D120937F13534DCC00A72CAA /* 4DPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D120937E13534DCC00A72CAA /* 4DPlugin.h */; };
+		D122039B1662D21C00AFEE18 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D122039A1662D21C00AFEE18 /* libiconv.dylib */; };
+		D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D130064E12F02D9700702C0E /* Cocoa.framework */; };
+		D1311CE31662F6EB00FDA146 /* libzbar.0.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1311CE21662F6EB00FDA146 /* libzbar.0.10.dylib */; };
+		D1311D2D16630E2B00FDA146 /* libqrencode.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1311D2C16630E2B00FDA146 /* libqrencode.3.4.1.dylib */; };
+		D1392DD513582164004911A5 /* C_PICTURE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1392DD313582164004911A5 /* C_PICTURE.cpp */; };
+		D1392DD613582164004911A5 /* C_PICTURE.h in Headers */ = {isa = PBXBuildFile; fileRef = D1392DD413582164004911A5 /* C_PICTURE.h */; };
+		D1392DD913582171004911A5 /* C_BLOB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1392DD713582171004911A5 /* C_BLOB.cpp */; };
+		D1392DDA13582171004911A5 /* C_BLOB.h in Headers */ = {isa = PBXBuildFile; fileRef = D1392DD813582171004911A5 /* C_BLOB.h */; };
+		D13E88A013543F3800C1F956 /* ARRAY_REAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D13E889E13543F3800C1F956 /* ARRAY_REAL.cpp */; };
+		D13E88A113543F3800C1F956 /* ARRAY_REAL.h in Headers */ = {isa = PBXBuildFile; fileRef = D13E889F13543F3800C1F956 /* ARRAY_REAL.h */; };
+		D15E921C166368C700732A60 /* functions_qren.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D15E921A166368C700732A60 /* functions_qren.cpp */; };
+		D15E921D166368C700732A60 /* functions_qren.h in Headers */ = {isa = PBXBuildFile; fileRef = D15E921B166368C700732A60 /* functions_qren.h */; };
+		D16AC3AA147CB499000AA750 /* ARRAY_BOOLEAN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D16AC3A8147CB499000AA750 /* ARRAY_BOOLEAN.cpp */; };
+		D16AC3AB147CB499000AA750 /* ARRAY_BOOLEAN.h in Headers */ = {isa = PBXBuildFile; fileRef = D16AC3A9147CB499000AA750 /* ARRAY_BOOLEAN.h */; };
+		D19271A51353D6F2001CEA07 /* ARRAY_TEXT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19271A31353D6F2001CEA07 /* ARRAY_TEXT.cpp */; };
+		D19271A61353D6F2001CEA07 /* ARRAY_TEXT.h in Headers */ = {isa = PBXBuildFile; fileRef = D19271A41353D6F2001CEA07 /* ARRAY_TEXT.h */; };
+		D19271AA1353D771001CEA07 /* ARRAY_LONGINT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19271A81353D771001CEA07 /* ARRAY_LONGINT.cpp */; };
+		D19271AB1353D771001CEA07 /* ARRAY_LONGINT.h in Headers */ = {isa = PBXBuildFile; fileRef = D19271A91353D771001CEA07 /* ARRAY_LONGINT.h */; };
+		D19271CD1353DE6E001CEA07 /* ARRAY_INTEGER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19271CB1353DE6E001CEA07 /* ARRAY_INTEGER.cpp */; };
+		D19271CE1353DE6E001CEA07 /* ARRAY_INTEGER.h in Headers */ = {isa = PBXBuildFile; fileRef = D19271CC1353DE6E001CEA07 /* ARRAY_INTEGER.h */; };
+		D19CC17E1353782E0004336E /* C_INTEGER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19CC1761353782E0004336E /* C_INTEGER.cpp */; };
+		D19CC17F1353782E0004336E /* C_INTEGER.h in Headers */ = {isa = PBXBuildFile; fileRef = D19CC1771353782E0004336E /* C_INTEGER.h */; };
+		D19CC1801353782E0004336E /* C_LONGINT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19CC1781353782E0004336E /* C_LONGINT.cpp */; };
+		D19CC1811353782E0004336E /* C_LONGINT.h in Headers */ = {isa = PBXBuildFile; fileRef = D19CC1791353782E0004336E /* C_LONGINT.h */; };
+		D19CC1821353782E0004336E /* C_REAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19CC17A1353782E0004336E /* C_REAL.cpp */; };
+		D19CC1831353782E0004336E /* C_REAL.h in Headers */ = {isa = PBXBuildFile; fileRef = D19CC17B1353782E0004336E /* C_REAL.h */; };
+		D19CC1841353782E0004336E /* C_TEXT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19CC17C1353782E0004336E /* C_TEXT.cpp */; };
+		D19CC1851353782E0004336E /* C_TEXT.h in Headers */ = {isa = PBXBuildFile; fileRef = D19CC17D1353782E0004336E /* C_TEXT.h */; };
+		D1C2F6DE1662EDFA0070B241 /* functions_zbar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1C2F6DC1662EDFA0070B241 /* functions_zbar.cpp */; };
+		D1C2F6DF1662EDFA0070B241 /* functions_zbar.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C2F6DD1662EDFA0070B241 /* functions_zbar.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		189286350695AD8900B05D6E /* Barcode.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Barcode.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B684EE06944F2000CC6A1E /* 4DPluginAPI.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = 4DPluginAPI.cpp; sourceTree = "<group>"; };
+		18B684F006944F2000CC6A1E /* 4DPluginAPI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = 4DPluginAPI.h; sourceTree = "<group>"; };
+		18B684F106944F2000CC6A1E /* EntryPoints.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = EntryPoints.h; sourceTree = "<group>"; };
+		18B684F206944F2000CC6A1E /* Flags.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Flags.h; sourceTree = "<group>"; };
+		18B684F306944F2000CC6A1E /* PrivateTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrivateTypes.h; sourceTree = "<group>"; };
+		18B684F406944F2000CC6A1E /* PublicTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PublicTypes.h; sourceTree = "<group>"; };
+		18B684FE06944F8800CC6A1E /* 4DPlugin.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = 4DPlugin.cpp; sourceTree = "<group>"; };
+		18B685220694531300CC6A1E /* 4DPlugin.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; path = 4DPlugin.rsrc; sourceTree = "<group>"; };
+		32BAE0B30371A71500C91783 /* 4D Plugin_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "4D Plugin_Prefix.pch"; sourceTree = "<group>"; };
+		8D01CCD10486CAD60068D4B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D10DD2C2135FA56100319781 /* C_TIME.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_TIME.cpp; path = Classes/C_TIME.cpp; sourceTree = "<group>"; };
+		D10DD2C3135FA56100319781 /* C_TIME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_TIME.h; path = Classes/C_TIME.h; sourceTree = "<group>"; };
+		D10DD2E9135FAB2F00319781 /* C_DATE.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_DATE.cpp; path = Classes/C_DATE.cpp; sourceTree = "<group>"; };
+		D10DD2EA135FAB2F00319781 /* C_DATE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_DATE.h; path = Classes/C_DATE.h; sourceTree = "<group>"; };
+		D120937E13534DCC00A72CAA /* 4DPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 4DPlugin.h; sourceTree = "<group>"; };
+		D122039A1662D21C00AFEE18 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		D130064E12F02D9700702C0E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		D1311CE21662F6EB00FDA146 /* libzbar.0.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libzbar.0.10.dylib; path = Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS/libzbar.0.10.dylib; sourceTree = "<group>"; };
+		D1311D2C16630E2B00FDA146 /* libqrencode.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libqrencode.3.4.1.dylib; path = Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS/libqrencode.3.4.1.dylib; sourceTree = "<group>"; };
+		D1392DD313582164004911A5 /* C_PICTURE.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_PICTURE.cpp; path = Classes/C_PICTURE.cpp; sourceTree = "<group>"; };
+		D1392DD413582164004911A5 /* C_PICTURE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_PICTURE.h; path = Classes/C_PICTURE.h; sourceTree = "<group>"; };
+		D1392DD713582171004911A5 /* C_BLOB.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_BLOB.cpp; path = Classes/C_BLOB.cpp; sourceTree = "<group>"; };
+		D1392DD813582171004911A5 /* C_BLOB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_BLOB.h; path = Classes/C_BLOB.h; sourceTree = "<group>"; };
+		D13E889E13543F3800C1F956 /* ARRAY_REAL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ARRAY_REAL.cpp; path = Classes/ARRAY_REAL.cpp; sourceTree = "<group>"; };
+		D13E889F13543F3800C1F956 /* ARRAY_REAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_REAL.h; path = Classes/ARRAY_REAL.h; sourceTree = "<group>"; };
+		D15E921A166368C700732A60 /* functions_qren.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = functions_qren.cpp; sourceTree = "<group>"; };
+		D15E921B166368C700732A60 /* functions_qren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions_qren.h; sourceTree = "<group>"; };
+		D16AC3A8147CB499000AA750 /* ARRAY_BOOLEAN.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ARRAY_BOOLEAN.cpp; path = Classes/ARRAY_BOOLEAN.cpp; sourceTree = "<group>"; };
+		D16AC3A9147CB499000AA750 /* ARRAY_BOOLEAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_BOOLEAN.h; path = Classes/ARRAY_BOOLEAN.h; sourceTree = "<group>"; };
+		D19271A31353D6F2001CEA07 /* ARRAY_TEXT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ARRAY_TEXT.cpp; path = Classes/ARRAY_TEXT.cpp; sourceTree = "<group>"; };
+		D19271A41353D6F2001CEA07 /* ARRAY_TEXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_TEXT.h; path = Classes/ARRAY_TEXT.h; sourceTree = "<group>"; };
+		D19271A81353D771001CEA07 /* ARRAY_LONGINT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ARRAY_LONGINT.cpp; path = Classes/ARRAY_LONGINT.cpp; sourceTree = "<group>"; };
+		D19271A91353D771001CEA07 /* ARRAY_LONGINT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_LONGINT.h; path = Classes/ARRAY_LONGINT.h; sourceTree = "<group>"; };
+		D19271CB1353DE6E001CEA07 /* ARRAY_INTEGER.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ARRAY_INTEGER.cpp; path = Classes/ARRAY_INTEGER.cpp; sourceTree = "<group>"; };
+		D19271CC1353DE6E001CEA07 /* ARRAY_INTEGER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_INTEGER.h; path = Classes/ARRAY_INTEGER.h; sourceTree = "<group>"; };
+		D19CC1761353782E0004336E /* C_INTEGER.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_INTEGER.cpp; path = classes/C_INTEGER.cpp; sourceTree = "<group>"; };
+		D19CC1771353782E0004336E /* C_INTEGER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_INTEGER.h; path = classes/C_INTEGER.h; sourceTree = "<group>"; };
+		D19CC1781353782E0004336E /* C_LONGINT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_LONGINT.cpp; path = classes/C_LONGINT.cpp; sourceTree = "<group>"; };
+		D19CC1791353782E0004336E /* C_LONGINT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_LONGINT.h; path = classes/C_LONGINT.h; sourceTree = "<group>"; };
+		D19CC17A1353782E0004336E /* C_REAL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_REAL.cpp; path = classes/C_REAL.cpp; sourceTree = "<group>"; };
+		D19CC17B1353782E0004336E /* C_REAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_REAL.h; path = classes/C_REAL.h; sourceTree = "<group>"; };
+		D19CC17C1353782E0004336E /* C_TEXT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_TEXT.cpp; path = classes/C_TEXT.cpp; sourceTree = "<group>"; };
+		D19CC17D1353782E0004336E /* C_TEXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_TEXT.h; path = classes/C_TEXT.h; sourceTree = "<group>"; };
+		D1C2F6DC1662EDFA0070B241 /* functions_zbar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = functions_zbar.cpp; sourceTree = "<group>"; };
+		D1C2F6DD1662EDFA0070B241 /* functions_zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions_zbar.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D01CCCD0486CAD60068D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */,
+				D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */,
+				D122039B1662D21C00AFEE18 /* libiconv.dylib in Frameworks */,
+				D1311CE31662F6EB00FDA146 /* libzbar.0.10.dylib in Frameworks */,
+				D1311D2D16630E2B00FDA146 /* libqrencode.3.4.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* 4D Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				189286360695AD8900B05D6E /* Products */,
+			);
+			name = "4D Plugin";
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D1311CE21662F6EB00FDA146 /* libzbar.0.10.dylib */,
+				D1311D2C16630E2B00FDA146 /* libqrencode.3.4.1.dylib */,
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+				D130064E12F02D9700702C0E /* Cocoa.framework */,
+				D122039A1662D21C00AFEE18 /* libiconv.dylib */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18B685220694531300CC6A1E /* 4DPlugin.rsrc */,
+				8D01CCD10486CAD60068D4B7 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				18B684FE06944F8800CC6A1E /* 4DPlugin.cpp */,
+				D120937E13534DCC00A72CAA /* 4DPlugin.h */,
+				D15E921A166368C700732A60 /* functions_qren.cpp */,
+				D15E921B166368C700732A60 /* functions_qren.h */,
+				D1C2F6DC1662EDFA0070B241 /* functions_zbar.cpp */,
+				D1C2F6DD1662EDFA0070B241 /* functions_zbar.h */,
+				18B684ED06944F2000CC6A1E /* 4D Plugin API */,
+				32BAE0B30371A71500C91783 /* 4D Plugin_Prefix.pch */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		189286360695AD8900B05D6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189286350695AD8900B05D6E /* Barcode.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B684ED06944F2000CC6A1E /* 4D Plugin API */ = {
+			isa = PBXGroup;
+			children = (
+				D19CC171135378140004336E /* Classes */,
+				18B684EE06944F2000CC6A1E /* 4DPluginAPI.cpp */,
+				18B684F006944F2000CC6A1E /* 4DPluginAPI.h */,
+				18B684F106944F2000CC6A1E /* EntryPoints.h */,
+				18B684F206944F2000CC6A1E /* Flags.h */,
+				18B684F306944F2000CC6A1E /* PrivateTypes.h */,
+				18B684F406944F2000CC6A1E /* PublicTypes.h */,
+			);
+			path = "4D Plugin API";
+			sourceTree = "<group>";
+		};
+		D19CC171135378140004336E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D13E889E13543F3800C1F956 /* ARRAY_REAL.cpp */,
+				D13E889F13543F3800C1F956 /* ARRAY_REAL.h */,
+				D16AC3A8147CB499000AA750 /* ARRAY_BOOLEAN.cpp */,
+				D16AC3A9147CB499000AA750 /* ARRAY_BOOLEAN.h */,
+				D19271A31353D6F2001CEA07 /* ARRAY_TEXT.cpp */,
+				D19271A41353D6F2001CEA07 /* ARRAY_TEXT.h */,
+				D19271A81353D771001CEA07 /* ARRAY_LONGINT.cpp */,
+				D19271A91353D771001CEA07 /* ARRAY_LONGINT.h */,
+				D19271CB1353DE6E001CEA07 /* ARRAY_INTEGER.cpp */,
+				D19271CC1353DE6E001CEA07 /* ARRAY_INTEGER.h */,
+				D1392DD713582171004911A5 /* C_BLOB.cpp */,
+				D1392DD813582171004911A5 /* C_BLOB.h */,
+				D19CC17A1353782E0004336E /* C_REAL.cpp */,
+				D19CC17B1353782E0004336E /* C_REAL.h */,
+				D19CC17C1353782E0004336E /* C_TEXT.cpp */,
+				D19CC17D1353782E0004336E /* C_TEXT.h */,
+				D10DD2C2135FA56100319781 /* C_TIME.cpp */,
+				D10DD2C3135FA56100319781 /* C_TIME.h */,
+				D10DD2E9135FAB2F00319781 /* C_DATE.cpp */,
+				D10DD2EA135FAB2F00319781 /* C_DATE.h */,
+				D1392DD313582164004911A5 /* C_PICTURE.cpp */,
+				D1392DD413582164004911A5 /* C_PICTURE.h */,
+				D19CC1781353782E0004336E /* C_LONGINT.cpp */,
+				D19CC1791353782E0004336E /* C_LONGINT.h */,
+				D19CC1761353782E0004336E /* C_INTEGER.cpp */,
+				D19CC1771353782E0004336E /* C_INTEGER.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D01CCC70486CAD60068D4B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCC80486CAD60068D4B7 /* 4D Plugin_Prefix.pch in Headers */,
+				18B684F706944F2000CC6A1E /* 4DPluginAPI.h in Headers */,
+				18B684F806944F2000CC6A1E /* EntryPoints.h in Headers */,
+				18B684F906944F2000CC6A1E /* Flags.h in Headers */,
+				18B684FA06944F2000CC6A1E /* PrivateTypes.h in Headers */,
+				18B684FB06944F2000CC6A1E /* PublicTypes.h in Headers */,
+				D120937F13534DCC00A72CAA /* 4DPlugin.h in Headers */,
+				D19CC17F1353782E0004336E /* C_INTEGER.h in Headers */,
+				D19CC1811353782E0004336E /* C_LONGINT.h in Headers */,
+				D19CC1831353782E0004336E /* C_REAL.h in Headers */,
+				D19CC1851353782E0004336E /* C_TEXT.h in Headers */,
+				D19271A61353D6F2001CEA07 /* ARRAY_TEXT.h in Headers */,
+				D19271AB1353D771001CEA07 /* ARRAY_LONGINT.h in Headers */,
+				D19271CE1353DE6E001CEA07 /* ARRAY_INTEGER.h in Headers */,
+				D13E88A113543F3800C1F956 /* ARRAY_REAL.h in Headers */,
+				D1392DD613582164004911A5 /* C_PICTURE.h in Headers */,
+				D1392DDA13582171004911A5 /* C_BLOB.h in Headers */,
+				D10DD2C5135FA56100319781 /* C_TIME.h in Headers */,
+				D10DD2EC135FAB2F00319781 /* C_DATE.h in Headers */,
+				D16AC3AB147CB499000AA750 /* ARRAY_BOOLEAN.h in Headers */,
+				D1C2F6DF1662EDFA0070B241 /* functions_zbar.h in Headers */,
+				D15E921D166368C700732A60 /* functions_qren.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D01CCC60486CAD60068D4B7 /* Barcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D60B3F0A9DDBC8002ABB42 /* Build configuration list for PBXNativeTarget "Barcode" */;
+			buildPhases = (
+				8D01CCC70486CAD60068D4B7 /* Headers */,
+				8D01CCC90486CAD60068D4B7 /* Resources */,
+				8D01CCCB0486CAD60068D4B7 /* Sources */,
+				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
+				8D01CCCF0486CAD60068D4B7 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Barcode;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = "4D Plugin";
+			productReference = 189286350695AD8900B05D6E /* Barcode.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 42D60B430A9DDBC8002ABB42 /* Build configuration list for PBXProject "Barcode" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* 4D Plugin */;
+			productRefGroup = 189286360695AD8900B05D6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D01CCC60486CAD60068D4B7 /* Barcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D01CCC90486CAD60068D4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D01CCCF0486CAD60068D4B7 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B685230694531300CC6A1E /* 4DPlugin.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B684F506944F2000CC6A1E /* 4DPluginAPI.cpp in Sources */,
+				18B684FF06944F8800CC6A1E /* 4DPlugin.cpp in Sources */,
+				D19CC17E1353782E0004336E /* C_INTEGER.cpp in Sources */,
+				D19CC1801353782E0004336E /* C_LONGINT.cpp in Sources */,
+				D19CC1821353782E0004336E /* C_REAL.cpp in Sources */,
+				D19CC1841353782E0004336E /* C_TEXT.cpp in Sources */,
+				D19271A51353D6F2001CEA07 /* ARRAY_TEXT.cpp in Sources */,
+				D19271AA1353D771001CEA07 /* ARRAY_LONGINT.cpp in Sources */,
+				D19271CD1353DE6E001CEA07 /* ARRAY_INTEGER.cpp in Sources */,
+				D13E88A013543F3800C1F956 /* ARRAY_REAL.cpp in Sources */,
+				D1392DD513582164004911A5 /* C_PICTURE.cpp in Sources */,
+				D1392DD913582171004911A5 /* C_BLOB.cpp in Sources */,
+				D10DD2C4135FA56100319781 /* C_TIME.cpp in Sources */,
+				D10DD2EB135FAB2F00319781 /* C_DATE.cpp in Sources */,
+				D16AC3AA147CB499000AA750 /* ARRAY_BOOLEAN.cpp in Sources */,
+				D1C2F6DE1662EDFA0070B241 /* functions_zbar.cpp in Sources */,
+				D15E921C166368C700732A60 /* functions_qren.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42D60B400A9DDBC8002ABB42 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DEPLOYMENT_LOCATION = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "4D Plugin_Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Barcode;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		42D60B410A9DDBC8002ABB42 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "4D Plugin_Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Barcode;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		42D60B420A9DDBC8002ABB42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "4D Plugin_Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Barcode;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Default;
+		};
+		42D60B440A9DDBC8002ABB42 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OBJROOT = "$(SRCROOT)/build";
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SYMROOT = "$(SRCROOT)/Barcode.4dbase/Plugins";
+				USER_HEADER_SEARCH_PATHS = "include/qrencode include/zbar";
+			};
+			name = Development;
+		};
+		42D60B450A9DDBC8002ABB42 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OBJROOT = "$(SRCROOT)/build";
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SYMROOT = "$(SRCROOT)/Barcode.4dbase/Plugins";
+				USER_HEADER_SEARCH_PATHS = "include/qrencode include/zbar";
+			};
+			name = Deployment;
+		};
+		42D60B460A9DDBC8002ABB42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SYMROOT = "$(SRCROOT)/Barcode.4dbase/Plugins";
+				USER_HEADER_SEARCH_PATHS = "include/qrencode include/zbar";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42D60B3F0A9DDBC8002ABB42 /* Build configuration list for PBXNativeTarget "Barcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D60B400A9DDBC8002ABB42 /* Development */,
+				42D60B410A9DDBC8002ABB42 /* Deployment */,
+				42D60B420A9DDBC8002ABB42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		42D60B430A9DDBC8002ABB42 /* Build configuration list for PBXProject "Barcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D60B440A9DDBC8002ABB42 /* Development */,
+				42D60B450A9DDBC8002ABB42 /* Deployment */,
+				42D60B460A9DDBC8002ABB42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
