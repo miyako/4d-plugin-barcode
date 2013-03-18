@@ -278,8 +278,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -331,11 +329,10 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D14D8C35166953ED001B400C</string>
+										<string>D171AEE116F7380400B38054</string>
 										<key>history</key>
 										<array>
 											<string>D1EB398A1662DD61009BAD60</string>
-											<string>D1EB39A71662E1EE009BAD60</string>
 											<string>D1C2F6CB1662EB730070B241</string>
 											<string>D1C2F6E51662EE1D0070B241</string>
 											<string>D1311DD21663636C00FDA146</string>
@@ -343,7 +340,7 @@
 											<string>D15E9226166368EC00732A60</string>
 											<string>D14D8C33166953ED001B400C</string>
 											<string>D14D8C34166953ED001B400C</string>
-											<string>D1311D591663215400FDA146</string>
+											<string>D147555116A7D4DB0071B77D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -355,14 +352,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {580, 277}}</string>
+								<string>{{0, 0}, {580, 260}}</string>
 								<key>RubberWindowFrame</key>
 								<string>69 374 788 504 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>277pt</string>
+							<string>260pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -375,14 +372,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 282}, {580, 181}}</string>
+								<string>{{0, 265}, {580, 198}}</string>
 								<key>RubberWindowFrame</key>
 								<string>69 374 788 504 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>181pt</string>
+							<string>198pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -401,9 +398,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>D14D8C36166953ED001B400C</string>
+				<string>D171AEE216F7380400B38054</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>D14D8C37166953ED001B400C</string>
+				<string>D171AEE316F7380400B38054</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -541,9 +538,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>D14D8C39166953ED001B400C</string>
 		<string>D12203291662D16900AFEE18</string>
-		<string>/Users/miyako/Desktop/Barcode/Barcode.xcodeproj</string>
+		<string>/Users/miyako/github-miyako/4d-plugin-barcode/Barcode/Barcode.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>69 374 788 504 0 0 1440 878 </string>
@@ -623,7 +619,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>D12203291662D16900AFEE18</string>
-				<string>D14D8C38166953ED001B400C</string>
+				<string>D171AEE416F7380400B38054</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -783,7 +779,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>&lt;エディタがありません&gt;</string>
+										<string></string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -841,8 +837,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>D1EB39A51662E1C8009BAD60</string>
-				<string>D1EB39A61662E1C8009BAD60</string>
+				<string>D147555516A7D4DB0071B77D</string>
+				<string>D147555616A7D4DB0071B77D</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -851,7 +847,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

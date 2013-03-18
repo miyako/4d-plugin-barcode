@@ -43,7 +43,8 @@ extern "C" {
 		void setUTF16String(NSString* pString);
 		NSMutableString* copyUTF16MutableString();
 		NSString* copyUTF16String();
-		NSString* copyPath();		
+		NSString* copyPath();
+		void convertPath();
 		void setPath(NSString* path);		
 		NSURL *copyUrl();
 #endif
@@ -58,6 +59,8 @@ extern "C" {
 		void copyUTF16String(CUTF16String* pString);			
 		void copyUTF8String(CUTF8String* pString);
 	
+		void copyPath(CUTF8String* pString);
+		
 		C_TEXT();
 		~C_TEXT();
 		

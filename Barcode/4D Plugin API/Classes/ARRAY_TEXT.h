@@ -50,11 +50,15 @@ public:
 #ifdef __OBJC__	
 	void appendUTF16String(NSString* pString);		
 	void setUTF16StringAtIndex(NSString* pString, uint32_t index);
+	NSString *copyUTF16StringAtIndex(uint32_t index);		
+	NSString *copyPathAtIndex(uint32_t index);		
+	NSURL *copyUrlAtIndex(uint32_t index);		
 #endif
 #endif
 	
 	void copyUTF16StringAtIndex(CUTF16String* pString, uint32_t index);	
 	void copyUTF8StringAtIndex(CUTF8String* pString, uint32_t index);	
+	void copyPathAtIndex(CUTF8String* pString, uint32_t index);	
 	
 	uint32_t getSize();
 	void setSize(uint32_t size);
