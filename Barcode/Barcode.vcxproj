@@ -88,7 +88,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>include\qrencode;include\zbar;4D Plugin API\Classes;4D Plugin API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\qrencode;include\zbar;4D Plugin API\Classes;4D Plugin API;include\pdf417lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MY4DPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -115,7 +115,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>include\qrencode;include\zbar;4D Plugin API\Classes;4D Plugin API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\qrencode;include\zbar;4D Plugin API\Classes;4D Plugin API;include\pdf417lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WIN64;WIN32;_DEBUG;_WINDOWS;_USRDLL;MY4DPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -138,7 +138,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>include\qrencode;include\zbar;4D Plugin API\Classes;4D Plugin API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\qrencode;include\zbar;4D Plugin API\Classes;4D Plugin API;include\pdf417lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MY4DPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>
@@ -163,7 +163,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>include\qrencode;include\zbar;4D Plugin API\Classes;4D Plugin API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\qrencode;include\zbar;4D Plugin API\Classes;4D Plugin API;include\pdf417lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WIN64;WIN32;NDEBUG;_WINDOWS;_USRDLL;MY4DPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>
@@ -200,8 +200,10 @@
     <ClCompile Include="4D Plugin API\Classes\C_TIME.cpp" />
     <ClCompile Include="4DPlugin.cpp" />
     <ClCompile Include="4D Plugin API\4DPluginAPI.cpp" />
+    <ClCompile Include="functions_p417.cpp" />
     <ClCompile Include="functions_qren.cpp" />
     <ClCompile Include="functions_zbar.cpp" />
+    <ClCompile Include="include\pdf417lib\pdf417lib.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="4D Plugin API\Classes\ARRAY_BOOLEAN.h" />
@@ -223,6 +225,7 @@
     <ClInclude Include="4D Plugin API\Flags.h" />
     <ClInclude Include="4D Plugin API\PrivateTypes.h" />
     <ClInclude Include="4D Plugin API\PublicTypes.h" />
+    <ClInclude Include="functions_p417.h" />
     <ClInclude Include="functions_qren.h" />
     <ClInclude Include="functions_zbar.h" />
   </ItemGroup>

@@ -67,6 +67,8 @@ void _convertToSVG(QRcode *qr, C_TEXT &returnValue){
 		
 		p = qr->data;
 		
+		void (*_PA_YieldAbsolute)(void) = PA_YieldAbsolute;
+		
 		for(i = 0; i < qr->width; ++i) 
 		{
 			x = 0;
@@ -76,6 +78,8 @@ void _convertToSVG(QRcode *qr, C_TEXT &returnValue){
 			for(j = 0; j < qr->width; ++j) 
 			{
 				sprintf(_x, "%d", x);
+				
+				(*_PA_YieldAbsolute)(); 
 				
 				if(*p&1)
 				{
@@ -123,10 +127,14 @@ void _convertToText(QRcode *qr, C_TEXT &returnValue){
 		uint32_t size = ((qr->width+1) * qr->width) + 1;
 		std::vector<uint8_t> data(size);
 		
+		void (*_PA_YieldAbsolute)(void) = PA_YieldAbsolute;
+		
 		for(y = 0; y < qr->width; y++) 
 		{
 			for(x = 0; x < qr->width; x++) 
 			{
+				(*_PA_YieldAbsolute)(); 
+				
 				if(*p&1)
 				{
 					data[b] = 49;

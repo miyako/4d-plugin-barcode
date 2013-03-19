@@ -23,4 +23,12 @@
       <param position="3" k="20001"/>
       <param position="4" k="20003"/>
    </command>
+   <command name="PDF417 Data" str="20000" topic="6">
+      <param position="2" k="20004"/>
+      <param position="3" k="20005"/>
+   </command>
+   <command name="PDF417 Text" str="20000" topic="7">
+      <param position="2" k="20004"/>
+      <param position="3" k="20005"/>
+   </command>
 </application>

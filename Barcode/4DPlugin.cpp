@@ -14,6 +14,7 @@
 
 #include "functions_zbar.h"
 #include "functions_qren.h"
+#include "functions_p417.h"
 
 void PluginMain(int32_t selector, PA_PluginParameters params)
 {
@@ -57,6 +58,16 @@ void CommandDispatcher (int32_t pProcNum, sLONG_PTR *pResult, PackagePtr pParams
 			
 		case 5 :
 			BARCODE_Read_image(pResult, pParams);
+			break;
+			
+			// --- pdf417
+			
+		case 6 :
+			PDF417_Data(pResult, pParams);
+			break;
+			
+		case 7 :
+			PDF417_Text(pResult, pParams);
 			break;
 			
 	}
