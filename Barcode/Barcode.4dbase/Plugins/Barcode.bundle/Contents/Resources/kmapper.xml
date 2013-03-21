@@ -31,4 +31,12 @@
       <param position="2" k="20004"/>
       <param position="3" k="20005"/>
    </command>
+   <command name="DMTX Text" str="20000" topic="9">
+      <param position="2" k="20006"/>
+      <param position="3" k="20007"/>
+   </command>
+   <command name="DMTX Data" str="20000" topic="10">
+      <param position="2" k="20006"/>
+      <param position="3" k="20007"/>
+   </command>
 </application>

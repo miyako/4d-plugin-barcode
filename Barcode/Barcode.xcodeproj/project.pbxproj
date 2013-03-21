@@ -56,6 +56,9 @@
 		D1B9061B16F7F7D5008E844D /* pdf417lib.c in Sources */ = {isa = PBXBuildFile; fileRef = D1B9061A16F7F7D5008E844D /* pdf417lib.c */; };
 		D1C2F6DE1662EDFA0070B241 /* functions_zbar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1C2F6DC1662EDFA0070B241 /* functions_zbar.cpp */; };
 		D1C2F6DF1662EDFA0070B241 /* functions_zbar.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C2F6DD1662EDFA0070B241 /* functions_zbar.h */; };
+		D1CFC82C16FB5BC000356C5A /* functions_dmtx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1CFC82A16FB5BC000356C5A /* functions_dmtx.cpp */; };
+		D1CFC82D16FB5BC000356C5A /* functions_dmtx.h in Headers */ = {isa = PBXBuildFile; fileRef = D1CFC82B16FB5BC000356C5A /* functions_dmtx.h */; };
+		D1E9388F16FB51BE004CF1CA /* libdmtx.0.7.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E9388E16FB51BE004CF1CA /* libdmtx.0.7.4.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +113,9 @@
 		D1B9061A16F7F7D5008E844D /* pdf417lib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = pdf417lib.c; path = include/pdf417lib/pdf417lib.c; sourceTree = "<group>"; };
 		D1C2F6DC1662EDFA0070B241 /* functions_zbar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = functions_zbar.cpp; sourceTree = "<group>"; };
 		D1C2F6DD1662EDFA0070B241 /* functions_zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions_zbar.h; sourceTree = "<group>"; };
+		D1CFC82A16FB5BC000356C5A /* functions_dmtx.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = functions_dmtx.cpp; sourceTree = "<group>"; };
+		D1CFC82B16FB5BC000356C5A /* functions_dmtx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions_dmtx.h; sourceTree = "<group>"; };
+		D1E9388E16FB51BE004CF1CA /* libdmtx.0.7.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdmtx.0.7.4.dylib; path = Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS/libdmtx.0.7.4.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,7 @@
 				D122039B1662D21C00AFEE18 /* libiconv.dylib in Frameworks */,
 				D1311CE31662F6EB00FDA146 /* libzbar.0.10.dylib in Frameworks */,
 				D1311D2D16630E2B00FDA146 /* libqrencode.3.4.1.dylib in Frameworks */,
+				D1E9388F16FB51BE004CF1CA /* libdmtx.0.7.4.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +154,7 @@
 				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
 				D130064E12F02D9700702C0E /* Cocoa.framework */,
 				D122039A1662D21C00AFEE18 /* libiconv.dylib */,
+				D1E9388E16FB51BE004CF1CA /* libdmtx.0.7.4.dylib */,
 			);
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
@@ -167,6 +175,8 @@
 				D1B9061A16F7F7D5008E844D /* pdf417lib.c */,
 				18B684FE06944F8800CC6A1E /* 4DPlugin.cpp */,
 				D120937E13534DCC00A72CAA /* 4DPlugin.h */,
+				D1CFC82A16FB5BC000356C5A /* functions_dmtx.cpp */,
+				D1CFC82B16FB5BC000356C5A /* functions_dmtx.h */,
 				D1B905C616F7EFE5008E844D /* functions_p417.cpp */,
 				D1B905C716F7EFE5008E844D /* functions_p417.h */,
 				D15E921A166368C700732A60 /* functions_qren.cpp */,
@@ -264,6 +274,7 @@
 				D1C2F6DF1662EDFA0070B241 /* functions_zbar.h in Headers */,
 				D15E921D166368C700732A60 /* functions_qren.h in Headers */,
 				D1B905C916F7EFE5008E844D /* functions_p417.h in Headers */,
+				D1CFC82D16FB5BC000356C5A /* functions_dmtx.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +372,7 @@
 				D15E921C166368C700732A60 /* functions_qren.cpp in Sources */,
 				D1B905C816F7EFE5008E844D /* functions_p417.cpp in Sources */,
 				D1B9061B16F7F7D5008E844D /* pdf417lib.c in Sources */,
+				D1CFC82C16FB5BC000356C5A /* functions_dmtx.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,9 +414,11 @@
 					"$(inherited)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -442,9 +456,11 @@
 					"$(inherited)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -480,9 +496,11 @@
 					"$(inherited)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -511,7 +529,7 @@
 				OBJROOT = "$(SRCROOT)/build";
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				SYMROOT = "$(SRCROOT)/Barcode.4dbase/Plugins";
-				USER_HEADER_SEARCH_PATHS = "include/qrencode include/zbar include/pdf417lib";
+				USER_HEADER_SEARCH_PATHS = "include/libdmtx include/qrencode include/zbar include/pdf417lib";
 			};
 			name = Development;
 		};
@@ -528,7 +546,7 @@
 				OBJROOT = "$(SRCROOT)/build";
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				SYMROOT = "$(SRCROOT)/Barcode.4dbase/Plugins";
-				USER_HEADER_SEARCH_PATHS = "include/qrencode include/zbar include/pdf417lib";
+				USER_HEADER_SEARCH_PATHS = "include/libdmtx include/qrencode include/zbar include/pdf417lib";
 			};
 			name = Deployment;
 		};
@@ -543,7 +561,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				SYMROOT = "$(SRCROOT)/Barcode.4dbase/Plugins";
-				USER_HEADER_SEARCH_PATHS = "include/qrencode include/zbar include/pdf417lib";
+				USER_HEADER_SEARCH_PATHS = "include/libdmtx include/qrencode include/zbar include/pdf417lib";
 			};
 			name = Default;
 		};

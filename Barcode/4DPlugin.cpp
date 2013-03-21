@@ -15,6 +15,7 @@
 #include "functions_zbar.h"
 #include "functions_qren.h"
 #include "functions_p417.h"
+#include "functions_dmtx.h"
 
 void PluginMain(int32_t selector, PA_PluginParameters params)
 {
@@ -70,5 +71,18 @@ void CommandDispatcher (int32_t pProcNum, sLONG_PTR *pResult, PackagePtr pParams
 			PDF417_Text(pResult, pParams);
 			break;
 			
+			// --- data matrix
+			
+		case 8 :
+			DMTX_Read_image(pResult, pParams);
+			break;
+			
+		case 9 :
+			DMTX_Text(pResult, pParams);
+			break;
+			
+		case 10 :
+			DMTX_Data(pResult, pParams);
+			break;			
 	}
 }
