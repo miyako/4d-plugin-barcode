@@ -11,6 +11,10 @@
 
 #include "dmtx.h"
 
+#if VERSIONWIN
+#include <gdiplus.h>
+#endif
+
 // --- data matrix
 void DMTX_Read_image(sLONG_PTR *pResult, PackagePtr pParams);
 void DMTX_Text(sLONG_PTR *pResult, PackagePtr pParams);
