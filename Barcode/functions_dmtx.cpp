@@ -123,6 +123,8 @@ void DMTX_Read_image(sLONG_PTR *pResult, PackagePtr pParams)
 	returnValue.setReturn(pResult);
 }
 
+#pragma mark -
+
 void _convertToText(DmtxEncode *enc, C_TEXT &returnValue){
 	
 	if(enc)
@@ -243,6 +245,61 @@ void _convertToSVG(DmtxEncode *enc, C_TEXT &returnValue){
 	
 }
 
+#pragma mark -
+
+void _DMTX(int n, unsigned char *s, C_LONGINT &Param2, C_LONGINT &Param3, C_TEXT &returnValue)
+{	
+	DmtxEncode *enc = dmtxEncodeCreate();
+	
+	DmtxScheme scheme;
+	
+	switch (Param2.getIntValue()) {
+		case 0:
+			scheme = DmtxSchemeAscii;
+			break;
+		case 1:
+			scheme = DmtxSchemeC40;
+			break;
+		case 2:
+			scheme = DmtxSchemeText;
+			break;
+		case 3:
+			scheme = DmtxSchemeX12;
+			break;
+		case 4:
+			scheme = DmtxSchemeEdifact;
+			break;			
+		case 5:
+			scheme = DmtxSchemeBase256;
+			break;
+		default:
+			scheme = DmtxSchemeAutoBest;
+			break;
+	}
+	
+	dmtxEncodeSetProp(enc, DmtxPropScheme, scheme);	
+	dmtxEncodeSetProp(enc, DmtxPropMarginSize, 0);
+	dmtxEncodeSetProp(enc, DmtxPropModuleSize, 1);
+	
+	if(dmtxEncodeDataMatrix(enc, n, s)){
+	
+		switch (Param3.getIntValue()) {
+			case 1:
+				_convertToSVG(enc, returnValue);				
+				break;			
+			default:
+				_convertToText(enc, returnValue);		
+				break;
+		}
+	
+	}
+
+	dmtxEncodeDestroy(&enc);
+	
+}
+
+#pragma mark -
+
 void DMTX_Text(sLONG_PTR *pResult, PackagePtr pParams)
 {
 	C_TEXT Param1;
@@ -256,54 +313,14 @@ void DMTX_Text(sLONG_PTR *pResult, PackagePtr pParams)
 
 	if(Param1.getUTF16Length()){
 	
-		DmtxEncode *enc = dmtxEncodeCreate();
-		
-		DmtxScheme scheme;
-		
-		switch (Param2.getIntValue()) {
-			case 0:
-				scheme = DmtxSchemeAscii;
-				break;
-			case 1:
-				scheme = DmtxSchemeC40;
-				break;
-			case 2:
-				scheme = DmtxSchemeText;
-				break;
-			case 3:
-				scheme = DmtxSchemeX12;
-				break;
-			case 4:
-				scheme = DmtxSchemeEdifact;
-				break;			
-			case 5:
-				scheme = DmtxSchemeBase256;
-				break;
-			default:
-				scheme = DmtxSchemeAutoBest;
-				break;
-		}
-		
-		dmtxEncodeSetProp(enc, DmtxPropScheme, scheme);	
-		dmtxEncodeSetProp(enc, DmtxPropMarginSize, 0);
-		dmtxEncodeSetProp(enc, DmtxPropModuleSize, 1);
-		
 		CUTF8String str;
 		Param1.copyUTF8String(&str);
 		
-		dmtxEncodeDataMatrix(enc, str.size(), (unsigned char *)str.c_str());
+		int n = str.size();
+		unsigned char *s = (unsigned char *)str.c_str();
 		
-		switch (Param3.getIntValue()) {
-			case 1:
-				_convertToSVG(enc, returnValue);				
-				break;			
-			default:
-				_convertToText(enc, returnValue);		
-				break;
-		}
+		_DMTX(n, s, Param2, Param3, returnValue);
 		
-		dmtxEncodeDestroy(&enc);
-
 	}
 	
 	returnValue.setReturn(pResult);
@@ -321,51 +338,11 @@ void DMTX_Data(sLONG_PTR *pResult, PackagePtr pParams)
 	Param3.fromParamAtIndex(pParams, 3);
 	
 	if(Param1.getBytesLength()){
-	
-		DmtxEncode *enc = dmtxEncodeCreate();
 		
-		DmtxScheme scheme;
-		
-		switch (Param2.getIntValue()) {
-			case 0:
-				scheme = DmtxSchemeAscii;
-				break;
-			case 1:
-				scheme = DmtxSchemeC40;
-				break;
-			case 2:
-				scheme = DmtxSchemeText;
-				break;
-			case 3:
-				scheme = DmtxSchemeX12;
-				break;
-			case 4:
-				scheme = DmtxSchemeEdifact;
-				break;			
-			case 5:
-				scheme = DmtxSchemeBase256;
-				break;
-			default:
-				scheme = DmtxSchemeAutoBest;
-				break;
-		}
-		
-		dmtxEncodeSetProp(enc, DmtxPropScheme, scheme);	
-		dmtxEncodeSetProp(enc, DmtxPropMarginSize, 0);
-		dmtxEncodeSetProp(enc, DmtxPropModuleSize, 1);
-		
-		dmtxEncodeDataMatrix(enc, Param1.getBytesLength(), (unsigned char *)Param1.getBytesPtr());
-		
-		switch (Param3.getIntValue()) {
-			case 1:
-				_convertToSVG(enc, returnValue);				
-				break;			
-			default:
-				_convertToText(enc, returnValue);		
-				break;
-		}
-		
-		dmtxEncodeDestroy(&enc);
+		int n = Param1.getBytesLength();
+		unsigned char *s = (unsigned char *)Param1.getBytesPtr();
+
+		_DMTX(n, s, Param2, Param3, returnValue);
 	
 	}
 	

@@ -22,6 +22,7 @@
 		D10DD2C5135FA56100319781 /* C_TIME.h in Headers */ = {isa = PBXBuildFile; fileRef = D10DD2C3135FA56100319781 /* C_TIME.h */; };
 		D10DD2EB135FAB2F00319781 /* C_DATE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D10DD2E9135FAB2F00319781 /* C_DATE.cpp */; };
 		D10DD2EC135FAB2F00319781 /* C_DATE.h in Headers */ = {isa = PBXBuildFile; fileRef = D10DD2EA135FAB2F00319781 /* C_DATE.h */; };
+		D111D96E17009C040060B96E /* libpdf417.0.91.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D111D96D17009C040060B96E /* libpdf417.0.91.dylib */; };
 		D120937F13534DCC00A72CAA /* 4DPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D120937E13534DCC00A72CAA /* 4DPlugin.h */; };
 		D122039B1662D21C00AFEE18 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D122039A1662D21C00AFEE18 /* libiconv.dylib */; };
 		D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D130064E12F02D9700702C0E /* Cocoa.framework */; };
@@ -43,6 +44,9 @@
 		D19271AB1353D771001CEA07 /* ARRAY_LONGINT.h in Headers */ = {isa = PBXBuildFile; fileRef = D19271A91353D771001CEA07 /* ARRAY_LONGINT.h */; };
 		D19271CD1353DE6E001CEA07 /* ARRAY_INTEGER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19271CB1353DE6E001CEA07 /* ARRAY_INTEGER.cpp */; };
 		D19271CE1353DE6E001CEA07 /* ARRAY_INTEGER.h in Headers */ = {isa = PBXBuildFile; fileRef = D19271CC1353DE6E001CEA07 /* ARRAY_INTEGER.h */; };
+		D1999791170060C100D8145D /* libzint.2.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1999790170060C100D8145D /* libzint.2.4.2.dylib */; };
+		D19997A71700613100D8145D /* functions_zint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19997A51700613100D8145D /* functions_zint.cpp */; };
+		D19997A81700613100D8145D /* functions_zint.h in Headers */ = {isa = PBXBuildFile; fileRef = D19997A61700613100D8145D /* functions_zint.h */; };
 		D19CC17E1353782E0004336E /* C_INTEGER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19CC1761353782E0004336E /* C_INTEGER.cpp */; };
 		D19CC17F1353782E0004336E /* C_INTEGER.h in Headers */ = {isa = PBXBuildFile; fileRef = D19CC1771353782E0004336E /* C_INTEGER.h */; };
 		D19CC1801353782E0004336E /* C_LONGINT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19CC1781353782E0004336E /* C_LONGINT.cpp */; };
@@ -53,7 +57,6 @@
 		D19CC1851353782E0004336E /* C_TEXT.h in Headers */ = {isa = PBXBuildFile; fileRef = D19CC17D1353782E0004336E /* C_TEXT.h */; };
 		D1B905C816F7EFE5008E844D /* functions_p417.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1B905C616F7EFE5008E844D /* functions_p417.cpp */; };
 		D1B905C916F7EFE5008E844D /* functions_p417.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B905C716F7EFE5008E844D /* functions_p417.h */; };
-		D1B9061B16F7F7D5008E844D /* pdf417lib.c in Sources */ = {isa = PBXBuildFile; fileRef = D1B9061A16F7F7D5008E844D /* pdf417lib.c */; };
 		D1C2F6DE1662EDFA0070B241 /* functions_zbar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1C2F6DC1662EDFA0070B241 /* functions_zbar.cpp */; };
 		D1C2F6DF1662EDFA0070B241 /* functions_zbar.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C2F6DD1662EDFA0070B241 /* functions_zbar.h */; };
 		D1CFC82C16FB5BC000356C5A /* functions_dmtx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1CFC82A16FB5BC000356C5A /* functions_dmtx.cpp */; };
@@ -79,6 +82,7 @@
 		D10DD2C3135FA56100319781 /* C_TIME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_TIME.h; path = Classes/C_TIME.h; sourceTree = "<group>"; };
 		D10DD2E9135FAB2F00319781 /* C_DATE.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_DATE.cpp; path = Classes/C_DATE.cpp; sourceTree = "<group>"; };
 		D10DD2EA135FAB2F00319781 /* C_DATE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_DATE.h; path = Classes/C_DATE.h; sourceTree = "<group>"; };
+		D111D96D17009C040060B96E /* libpdf417.0.91.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpdf417.0.91.dylib; path = Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS/libpdf417.0.91.dylib; sourceTree = "<group>"; };
 		D120937E13534DCC00A72CAA /* 4DPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 4DPlugin.h; sourceTree = "<group>"; };
 		D122039A1662D21C00AFEE18 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		D130064E12F02D9700702C0E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -100,6 +104,9 @@
 		D19271A91353D771001CEA07 /* ARRAY_LONGINT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_LONGINT.h; path = Classes/ARRAY_LONGINT.h; sourceTree = "<group>"; };
 		D19271CB1353DE6E001CEA07 /* ARRAY_INTEGER.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ARRAY_INTEGER.cpp; path = Classes/ARRAY_INTEGER.cpp; sourceTree = "<group>"; };
 		D19271CC1353DE6E001CEA07 /* ARRAY_INTEGER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_INTEGER.h; path = Classes/ARRAY_INTEGER.h; sourceTree = "<group>"; };
+		D1999790170060C100D8145D /* libzint.2.4.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libzint.2.4.2.dylib; path = Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS/libzint.2.4.2.dylib; sourceTree = "<group>"; };
+		D19997A51700613100D8145D /* functions_zint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = functions_zint.cpp; sourceTree = "<group>"; };
+		D19997A61700613100D8145D /* functions_zint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions_zint.h; sourceTree = "<group>"; };
 		D19CC1761353782E0004336E /* C_INTEGER.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_INTEGER.cpp; path = classes/C_INTEGER.cpp; sourceTree = "<group>"; };
 		D19CC1771353782E0004336E /* C_INTEGER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_INTEGER.h; path = classes/C_INTEGER.h; sourceTree = "<group>"; };
 		D19CC1781353782E0004336E /* C_LONGINT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_LONGINT.cpp; path = classes/C_LONGINT.cpp; sourceTree = "<group>"; };
@@ -110,7 +117,6 @@
 		D19CC17D1353782E0004336E /* C_TEXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_TEXT.h; path = classes/C_TEXT.h; sourceTree = "<group>"; };
 		D1B905C616F7EFE5008E844D /* functions_p417.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = functions_p417.cpp; sourceTree = "<group>"; };
 		D1B905C716F7EFE5008E844D /* functions_p417.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions_p417.h; sourceTree = "<group>"; };
-		D1B9061A16F7F7D5008E844D /* pdf417lib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = pdf417lib.c; path = include/pdf417lib/pdf417lib.c; sourceTree = "<group>"; };
 		D1C2F6DC1662EDFA0070B241 /* functions_zbar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = functions_zbar.cpp; sourceTree = "<group>"; };
 		D1C2F6DD1662EDFA0070B241 /* functions_zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions_zbar.h; sourceTree = "<group>"; };
 		D1CFC82A16FB5BC000356C5A /* functions_dmtx.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = functions_dmtx.cpp; sourceTree = "<group>"; };
@@ -129,6 +135,8 @@
 				D1311CE31662F6EB00FDA146 /* libzbar.0.10.dylib in Frameworks */,
 				D1311D2D16630E2B00FDA146 /* libqrencode.3.4.1.dylib in Frameworks */,
 				D1E9388F16FB51BE004CF1CA /* libdmtx.0.7.4.dylib in Frameworks */,
+				D1999791170060C100D8145D /* libzint.2.4.2.dylib in Frameworks */,
+				D111D96E17009C040060B96E /* libpdf417.0.91.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,12 +157,14 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				D1311CE21662F6EB00FDA146 /* libzbar.0.10.dylib */,
-				D1311D2C16630E2B00FDA146 /* libqrencode.3.4.1.dylib */,
 				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
 				D130064E12F02D9700702C0E /* Cocoa.framework */,
+				D1311D2C16630E2B00FDA146 /* libqrencode.3.4.1.dylib */,
+				D1311CE21662F6EB00FDA146 /* libzbar.0.10.dylib */,
 				D122039A1662D21C00AFEE18 /* libiconv.dylib */,
 				D1E9388E16FB51BE004CF1CA /* libdmtx.0.7.4.dylib */,
+				D1999790170060C100D8145D /* libzint.2.4.2.dylib */,
+				D111D96D17009C040060B96E /* libpdf417.0.91.dylib */,
 			);
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
@@ -172,17 +182,11 @@
 		08FB77ADFE841716C02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D1B9061A16F7F7D5008E844D /* pdf417lib.c */,
+				D1A0D7C11701D1C70017DAAE /* stable */,
 				18B684FE06944F8800CC6A1E /* 4DPlugin.cpp */,
 				D120937E13534DCC00A72CAA /* 4DPlugin.h */,
-				D1CFC82A16FB5BC000356C5A /* functions_dmtx.cpp */,
-				D1CFC82B16FB5BC000356C5A /* functions_dmtx.h */,
-				D1B905C616F7EFE5008E844D /* functions_p417.cpp */,
-				D1B905C716F7EFE5008E844D /* functions_p417.h */,
-				D15E921A166368C700732A60 /* functions_qren.cpp */,
-				D15E921B166368C700732A60 /* functions_qren.h */,
-				D1C2F6DC1662EDFA0070B241 /* functions_zbar.cpp */,
-				D1C2F6DD1662EDFA0070B241 /* functions_zbar.h */,
+				D19997A51700613100D8145D /* functions_zint.cpp */,
+				D19997A61700613100D8145D /* functions_zint.h */,
 				18B684ED06944F2000CC6A1E /* 4D Plugin API */,
 				32BAE0B30371A71500C91783 /* 4D Plugin_Prefix.pch */,
 			);
@@ -244,6 +248,21 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		D1A0D7C11701D1C70017DAAE /* stable */ = {
+			isa = PBXGroup;
+			children = (
+				D1CFC82A16FB5BC000356C5A /* functions_dmtx.cpp */,
+				D1CFC82B16FB5BC000356C5A /* functions_dmtx.h */,
+				D15E921A166368C700732A60 /* functions_qren.cpp */,
+				D15E921B166368C700732A60 /* functions_qren.h */,
+				D1C2F6DC1662EDFA0070B241 /* functions_zbar.cpp */,
+				D1C2F6DD1662EDFA0070B241 /* functions_zbar.h */,
+				D1B905C616F7EFE5008E844D /* functions_p417.cpp */,
+				D1B905C716F7EFE5008E844D /* functions_p417.h */,
+			);
+			name = stable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -275,6 +294,7 @@
 				D15E921D166368C700732A60 /* functions_qren.h in Headers */,
 				D1B905C916F7EFE5008E844D /* functions_p417.h in Headers */,
 				D1CFC82D16FB5BC000356C5A /* functions_dmtx.h in Headers */,
+				D19997A81700613100D8145D /* functions_zint.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,8 +391,8 @@
 				D1C2F6DE1662EDFA0070B241 /* functions_zbar.cpp in Sources */,
 				D15E921C166368C700732A60 /* functions_qren.cpp in Sources */,
 				D1B905C816F7EFE5008E844D /* functions_p417.cpp in Sources */,
-				D1B9061B16F7F7D5008E844D /* pdf417lib.c in Sources */,
 				D1CFC82C16FB5BC000356C5A /* functions_dmtx.cpp in Sources */,
+				D19997A71700613100D8145D /* functions_zint.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +435,14 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -457,10 +481,14 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -497,10 +525,14 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/Barcode.4dbase/Plugins/Barcode.bundle/Contents/MacOS\"";
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -529,7 +561,7 @@
 				OBJROOT = "$(SRCROOT)/build";
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				SYMROOT = "$(SRCROOT)/Barcode.4dbase/Plugins";
-				USER_HEADER_SEARCH_PATHS = "include/libdmtx include/qrencode include/zbar include/pdf417lib";
+				USER_HEADER_SEARCH_PATHS = "include/libzint include/libdmtx include/libpdf417 include/qrencode include/zbar";
 			};
 			name = Development;
 		};
@@ -546,7 +578,7 @@
 				OBJROOT = "$(SRCROOT)/build";
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				SYMROOT = "$(SRCROOT)/Barcode.4dbase/Plugins";
-				USER_HEADER_SEARCH_PATHS = "include/libdmtx include/qrencode include/zbar include/pdf417lib";
+				USER_HEADER_SEARCH_PATHS = "include/libzint include/libdmtx include/libpdf417 include/qrencode include/zbar";
 			};
 			name = Deployment;
 		};
@@ -561,7 +593,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				SYMROOT = "$(SRCROOT)/Barcode.4dbase/Plugins";
-				USER_HEADER_SEARCH_PATHS = "include/libdmtx include/qrencode include/zbar include/pdf417lib";
+				USER_HEADER_SEARCH_PATHS = "include/libzint include/libdmtx include/libpdf417 include/qrencode include/zbar";
 			};
 			name = Default;
 		};

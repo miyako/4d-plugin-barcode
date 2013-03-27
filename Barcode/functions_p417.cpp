@@ -168,11 +168,52 @@ void _convertToText(pdf417param *pdf417, C_TEXT &returnValue){
 	}
 }
 
+#pragma mark -
+
+void _PDF417(pdf417param *pdf417, C_LONGINT &Param2, C_LONGINT &Param3, C_TEXT &returnValue)
+{
+	if(pdf417){
+		
+		int errorLevel = Param3.getIntValue();
+		
+		if(!errorLevel){
+			pdf417->options = PDF417_AUTO_ERROR_LEVEL;	
+		}else{
+			pdf417->options = PDF417_USE_ERROR_LEVEL;
+			
+			if(errorLevel < 0)
+				errorLevel = 0;
+			
+			if(errorLevel > 4)
+				errorLevel = 4;
+			
+			pdf417->errorLevel = errorLevel;
+		}
+		
+		paintCode(pdf417);
+		
+		switch (Param2.getIntValue()) {
+			case 1:
+				_convertToSVG(pdf417, returnValue);				
+				break;			
+			default:
+				_convertToText(pdf417, returnValue);		
+				break;
+		}	
+		
+		pdf417free(pdf417);
+		
+	}
+	
+}
+
+#pragma mark -
+
 void PDF417_Text(sLONG_PTR *pResult, PackagePtr pParams)
 {
 	C_TEXT Param1;
 	C_LONGINT Param2;
-	C_LONGINT Param3;
+	C_LONGINT Param3;	
 	C_TEXT returnValue;
 	
 	Param1.fromParamAtIndex(pParams, 1);
@@ -182,6 +223,7 @@ void PDF417_Text(sLONG_PTR *pResult, PackagePtr pParams)
 	if(Param1.getUTF16Length()){
 	
 		pdf417param pdf417;
+		
 		pdf417init(&pdf417);
 		
 		CUTF8String t;
@@ -189,25 +231,15 @@ void PDF417_Text(sLONG_PTR *pResult, PackagePtr pParams)
 		
 		pdf417.text = (char *)t.c_str();
 		pdf417.lenText = t.size();
-		pdf417.options = Param2.getIntValue();
 		
-		paintCode(&pdf417);
-		
-		switch (Param3.getIntValue()) {
-			case 1:
-				_convertToSVG(&pdf417, returnValue);				
-				break;			
-			default:
-				_convertToText(&pdf417, returnValue);		
-				break;
-		}	
-		
-		pdf417free(&pdf417);
+		_PDF417(&pdf417, Param2, Param3, returnValue);
 		
 	}
 	
 	returnValue.setReturn(pResult);
 }
+
+
 
 void PDF417_Data(sLONG_PTR *pResult, PackagePtr pParams)
 {
@@ -223,25 +255,14 @@ void PDF417_Data(sLONG_PTR *pResult, PackagePtr pParams)
 	if(Param1.getBytesLength()){
 		
 		pdf417param pdf417;
+		
 		pdf417init(&pdf417);
 		
 		pdf417.text = (char *)Param1.getBytesPtr();
 		pdf417.lenText = Param1.getBytesLength();
-		pdf417.options = Param2.getIntValue();
 		
-		paintCode(&pdf417);
-		
-		switch (Param3.getIntValue()) {
-			case 1:
-				_convertToSVG(&pdf417, returnValue);				
-				break;			
-			default:
-				_convertToText(&pdf417, returnValue);		
-				break;
-		}	
-		
-		pdf417free(&pdf417);
-		
+		_PDF417(&pdf417, Param2, Param3, returnValue);
+
 	}
 	
 	returnValue.setReturn(pResult);

@@ -1,11 +1,3 @@
-/*
- *  functions_zbar.cpp
- *  Time
- *
- *  Created by miyako on 2012/10/30.
- *
- */
-
 #include "functions_zbar.h"
 
 void BARCODE_Read_image(sLONG_PTR *pResult, PackagePtr pParams)
@@ -18,6 +10,8 @@ void BARCODE_Read_image(sLONG_PTR *pResult, PackagePtr pParams)
 	Param1.fromParamAtIndex(pParams, 1);
 	
 	PA_Picture gs = Param1.createGrayScale();
+	
+	void (*_PA_YieldAbsolute)(void) = PA_YieldAbsolute;
 	
 #if VERSIONMAC	
 	CGImageRef image = (CGImageRef)PA_CreateNativePictureForScreen(gs);
@@ -73,6 +67,7 @@ void BARCODE_Read_image(sLONG_PTR *pResult, PackagePtr pParams)
 			size_t i = 0;
 			
 			for(size_t y = 0; y < h; y++) {
+				(*_PA_YieldAbsolute)(); 
 				for(size_t x = 0; x < w; x++) {
 					pixel = pixels[y*w+x];
 					y8 = (pixel >> 24) & 0xFF;
@@ -94,6 +89,7 @@ void BARCODE_Read_image(sLONG_PTR *pResult, PackagePtr pParams)
 		size_t i = 0;
 		
 		for(size_t y = 0; y < h; y++) {
+			(*_PA_YieldAbsolute)(); 
 			for(size_t x = 0; x < w; x++) {
 				
 				Gdiplus::Color c;
@@ -130,6 +126,8 @@ void BARCODE_Read_image(sLONG_PTR *pResult, PackagePtr pParams)
 			const zbar_symbol_t *symbol = zbar_image_first_symbol(zImage);
 			
 			for(; symbol; symbol = zbar_symbol_next(symbol)) {
+				
+				(*_PA_YieldAbsolute)(); 
 				
 				count++;
 				

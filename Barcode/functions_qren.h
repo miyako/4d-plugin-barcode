@@ -1,6 +1,6 @@
 /*
  *  functions_qren.h
- *  Time
+ *  
  *
  *  Created by miyako on 2012/10/30.
  *

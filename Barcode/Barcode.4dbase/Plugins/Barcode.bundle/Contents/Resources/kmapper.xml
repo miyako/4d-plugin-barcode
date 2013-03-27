@@ -25,18 +25,24 @@
    </command>
    <command name="PDF417 Data" str="20000" topic="6">
       <param position="2" k="20004"/>
-      <param position="3" k="20005"/>
    </command>
    <command name="PDF417 Text" str="20000" topic="7">
       <param position="2" k="20004"/>
-      <param position="3" k="20005"/>
    </command>
-   <command name="DMTX Text" str="20000" topic="9">
-      <param position="2" k="20006"/>
-      <param position="3" k="20007"/>
+   <command name="BARCODE Data" str="20000" topic="8">
+      <param position="2" k="20007"/>
+      <param position="3" k="20008"/>
    </command>
-   <command name="DMTX Data" str="20000" topic="10">
-      <param position="2" k="20006"/>
-      <param position="3" k="20007"/>
+   <command name="BARCODE Text" str="20000" topic="9">
+      <param position="2" k="20007"/>
+      <param position="3" k="20008"/>
+   </command>
+   <command name="DMTX Text" str="20000" topic="11">
+      <param position="2" k="20005"/>
+      <param position="3" k="20006"/>
+   </command>
+   <command name="DMTX Data" str="20000" topic="12">
+      <param position="2" k="20005"/>
+      <param position="3" k="20006"/>
    </command>
 </application>

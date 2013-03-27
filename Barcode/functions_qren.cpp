@@ -1,11 +1,3 @@
-/*
- *  functions_qren.cpp
- *  Time
- *
- *  Created by miyako on 2012/10/30.
- *
- */
-
 #include "functions_qren.h"
 
 QRecLevel _getErrorCorrectionLevel(int level){
@@ -50,6 +42,8 @@ QRecLevel _getErrorCorrectionLevelMicro(int level){
 	return correctionLevel;
 	
 }
+
+#pragma mark -
 
 void _convertToSVG(QRcode *qr, C_TEXT &returnValue){
 	
@@ -157,6 +151,8 @@ void _convertToText(QRcode *qr, C_TEXT &returnValue){
 	
 }
 
+#pragma mark -
+
 void QRCODE_Text(sLONG_PTR *pResult, PackagePtr pParams)
 {
 	C_TEXT Param1;
@@ -255,6 +251,8 @@ void QRCODE_Data(sLONG_PTR *pResult, PackagePtr pParams)
 	
 	returnValue.setReturn(pResult);		
 }
+
+#pragma mark -
 
 void MICRO_QRCODE_Data(sLONG_PTR *pResult, PackagePtr pParams)
 {
