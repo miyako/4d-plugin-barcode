@@ -104,7 +104,9 @@ void DMTX_Read_image(sLONG_PTR *pResult, PackagePtr pParams)
 		if(img){
 			DmtxDecode *dec = dmtxDecodeCreate(img, 1);
 			if(dec){
-				DmtxRegion *reg = dmtxRegionFindNext(dec, NULL);
+				DmtxTime timeout = dmtxTimeNow();
+				timeout.sec++;
+				DmtxRegion *reg = dmtxRegionFindNext(dec, &timeout);
 				if(reg){
 					DmtxMessage *msg = dmtxDecodeMatrixRegion(dec, reg, DmtxUndefined);
 					if(msg){
