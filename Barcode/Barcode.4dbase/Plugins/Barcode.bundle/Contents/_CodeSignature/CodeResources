@@ -191,17 +191,9 @@
 		<data>
 		AMwBsq9wrvuACPJPVmOMVzC7pBA=
 		</data>
-		<key>Windows/Barcode.exp</key>
-		<data>
-		ltsQ6wE+LGp8BONm0jlomsOgiy8=
-		</data>
 		<key>Windows/Barcode.htm</key>
 		<data>
 		3f3hE90+GMuzyHmK9RVQvLK+Zs8=
-		</data>
-		<key>Windows/Barcode.lib</key>
-		<data>
-		UUslVFIHRJZv/rjEEpI4Zn59a60=
 		</data>
 		<key>Windows/libdmtx.0.7.5.dll</key>
 		<data>
@@ -223,6 +215,14 @@
 		<data>
 		502ieMnq6vTUs1Tv+dh9PUTWm9I=
 		</data>
+		<key>Windows/msvcp100.dll</key>
+		<data>
+		+x3Mur1YehJQgSer/3s8i/bCuxo=
+		</data>
+		<key>Windows/msvcr100.dll</key>
+		<data>
+		u/NB5+2ZR94LXYTZPKC8TIvrVQA=
+		</data>
 		<key>Windows64/Barcode.4DX</key>
 		<data>
 		beQZ4YD+X4a5gXw753JV/FA0yYE=
@@ -231,17 +231,9 @@
 		<data>
 		AMwBsq9wrvuACPJPVmOMVzC7pBA=
 		</data>
-		<key>Windows64/Barcode.exp</key>
-		<data>
-		4DpvQPDN5yrGkctTm5Dx1h1G8oE=
-		</data>
 		<key>Windows64/Barcode.htm</key>
 		<data>
 		3f3hE90+GMuzyHmK9RVQvLK+Zs8=
-		</data>
-		<key>Windows64/Barcode.lib</key>
-		<data>
-		JKFObmCiLIA6Ekx7kIGWi3bquZg=
 		</data>
 		<key>Windows64/libdmtx.0.7.5.dll</key>
 		<data>
@@ -262,6 +254,14 @@
 		<key>Windows64/libzint.2.4.2.dll</key>
 		<data>
 		EQHoaA0l1x5+umeggz1UBfG0yNA=
+		</data>
+		<key>Windows64/msvcp100.dll</key>
+		<data>
+		0YKwZWmW/QMtWUIVkB7Evz9f0s8=
+		</data>
+		<key>Windows64/msvcr100.dll</key>
+		<data>
+		H3z8469mM2jlJgn5lfM1f610v9Y=
 		</data>
 	</dict>
 	<key>rules</key>
