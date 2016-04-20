@@ -3,6 +3,16 @@
 
 libqrencode, libzbar implementation for 4D
 
+***Deprecated***
+
+Please use 
+
+https://github.com/miyako/4d-plugin-zint
+
+https://github.com/miyako/4d-plugin-qrencode
+
+https://github.com/miyako/4d-plugin-data-matrix
+
 ##Platform
 
 | carbon | cocoa | win32 | win64 |
