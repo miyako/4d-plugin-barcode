@@ -13,6 +13,8 @@ https://github.com/miyako/4d-plugin-qrencode
 
 https://github.com/miyako/4d-plugin-data-matrix
 
+https://github.com/miyako/4d-plugin-zbar
+
 ##Platform
 
 | carbon | cocoa | win32 | win64 |
